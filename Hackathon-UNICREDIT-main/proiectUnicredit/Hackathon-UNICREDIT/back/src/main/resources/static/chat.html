@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BeMyHelp · Chat</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --red: #E2001A;
+      --red-dark: #B30015;
+      --text: #1A1A1A;
+      --muted: #555555;
+      --dim: rgba(0,0,0,0.4);
+      --dark: #262626;
+      /* Balance Variables */
+      --bg-main: #F0F2F5;
+      --panel-bg: rgba(255, 255, 255, 0.95);
+      --panel-border: rgba(0, 0, 0, 0.06);
+    }
+
+    html, body {
+      height: 100%;
+      overflow: hidden;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: var(--text);
+      background: var(--bg-main);
+    }
+
+    /* ANIMATED GRADIENT BACKGROUND - BALANSAT STÂNGA-DREAPTA */
+    .bg-layer {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      overflow: hidden;
+      background: radial-gradient(circle at 50% 0%, #FFFFFF 0%, #F0F2F5 80%);
+    }
+
+    .bg-orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(120px);
+      animation: orbDrift 20s ease-in-out infinite alternate;
+    }
+
+    .bg-orb-1 {
+      width: 45vw;
+      height: 45vw;
+      background: rgba(226, 0, 26, 0.08);
+      top: -10%;
+      right: -5%;
+    }
+
+    .bg-orb-2 {
+      width: 35vw;
+      height: 35vw;
+      background: rgba(226, 0, 26, 0.06);
+      bottom: -10%;
+      left: -10%;
+      animation-delay: -5s;
+    }
+
+    @keyframes orbDrift {
+      0% {
+        transform: translate(0, 0) scale(1);
+      }
+
+      100% {
+        transform: translate(-30px, 20px) scale(1.05);
+      }
+    }
+
+    /* NAV */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 200;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 32px;
+      height: 78px;
+      background: var(--panel-bg);
+      backdrop-filter: blur(24px);
+      border-bottom: 1px solid var(--panel-border);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      min-width: 0;
+    }
+
+    .nav-uc-logo {
+      height: 50px;
+      width: auto;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      flex-shrink: 0;
+    }
+
+    .nav-uc-logo-img {
+      height: 100%;
+      width: auto;
+      display: block;
+      object-fit: contain;
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 10px;
+      min-width: 0;
+    }
+
+    .nav-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: white;
+      border: 1px solid var(--panel-border);
+      color: var(--muted);
+      padding: 8px 18px;
+      border-radius: 100px;
+      font-size: 13px;
+      font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
+      transition: all 0.25s;
+      text-decoration: none;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+    }
+
+    .nav-back:hover {
+      color: var(--red);
+      border-color: rgba(226,0,26,0.2);
+      box-shadow: 0 4px 12px rgba(226,0,26,0.06);
+    }
+
+    /* LAYOUT */
+    .layout {
+      display: grid;
+      grid-template-columns: 272px 1fr;
+      height: 100vh;
+      padding-top: 78px;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* SIDEBAR */
+    .sidebar {
+      background: var(--panel-bg);
+      border-right: 1px solid var(--panel-border);
+      border-top: 3px solid var(--red);
+      padding: 24px 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      overflow-y: auto;
+      box-shadow: 4px 0 24px rgba(0,0,0,0.02);
+    }
+
+    .sidebar::-webkit-scrollbar {
+      width: 0;
+    }
+
+    .sidebar-section-label {
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--red);
+      padding: 0 4px;
+    }
+
+    .chips {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .chip {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 14px;
+      background: white;
+      border: 1px solid var(--panel-border);
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+    }
+
+    .chip-label {
+      font-size: 11px;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    .chip-val {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--dark);
+    }
+
+    .chip-val.green {
+      color: #16A34A;
+    }
+
+    .chip-val.amber {
+      color: #D97706;
+    }
+
+    .sidebar-sep {
+      height: 1px;
+      background: rgba(0,0,0,0.05);
+      margin: 4px 0;
+    }
+
+    .quick-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .quick-action {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 14px;
+      background: white;
+      border: 1px solid var(--panel-border);
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.2s;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 600;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+    }
+
+    .quick-action:hover {
+      border-color: rgba(226,0,26,0.3);
+      color: var(--red);
+      transform: translateX(3px);
+      box-shadow: 0 4px 12px rgba(226,0,26,0.08);
+    }
+
+    .qa-icon {
+      font-size: 16px;
+    }
+
+    /* CHAT MAIN */
+    .chat-main {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      height: 100%;
+      background: transparent;
+    }
+
+    /* Top bar */
+    .chat-topbar {
+      padding: 16px 28px;
+      border-bottom: 1px solid var(--panel-border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-shrink: 0;
+      background: var(--panel-bg);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.02);
+    }
+
+    .topbar-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .topbar-ava {
+      width: 40px;
+      height: 40px;
+      background: white;
+      border: 1px solid rgba(226,0,26,0.15);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      padding: 6px;
+      box-shadow: 0 4px 12px rgba(226,0,26,0.08);
+    }
+
+    .topbar-ava img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    /* MODIFICARE PENTRU ELEGANTĂ: dimensiune mai mică, greutate rafinată și spațiere corectă */
+    .topbar-name {
+      font-family: 'Syne', sans-serif;
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.4px;
+      color: var(--dark);
+    }
+
+    .topbar-actions {
+      display: flex;
+      gap: 10px;
+    }
+
+    .icon-btn {
+      width: 38px;
+      height: 38px;
+      background: white;
+      border: 1px solid var(--panel-border);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all 0.2s;
+      color: var(--muted);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+    }
+
+    .icon-btn:hover {
+      border-color: rgba(226,0,26,0.3);
+      color: var(--red);
+      box-shadow: 0 4px 10px rgba(226,0,26,0.06);
+    }
+
+    /* MESSAGES */
+    .messages {
+      flex: 1;
+      overflow-y: auto;
+      padding: 32px 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .messages::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    .messages::-webkit-scrollbar-thumb {
+      background: rgba(0,0,0,0.15);
+      border-radius: 4px;
+    }
+
+    .msg {
+      display: flex;
+      gap: 14px;
+      animation: msgIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+
+    .msg.user {
+      flex-direction: row-reverse;
+      align-self: flex-end;
+      max-width: 65%;
+    }
+
+    .msg.bot {
+      align-self: flex-start;
+      max-width: 80%;
+    }
+
+    .msg-ava {
+      width: 38px;
+      height: 38px;
+      border-radius: 12px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+    }
+
+    .msg-ava.bot {
+      background: white;
+      border: 1px solid rgba(226,0,26,0.2);
+      box-shadow: 0 4px 12px rgba(226,0,26,0.08);
+    }
+
+    .msg-ava.user {
+      background: white;
+      border: 1px solid var(--panel-border);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      color: var(--muted);
+    }
+
+    .msg-body {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .bubble {
+      padding: 16px 22px;
+      border-radius: 18px;
+      font-size: 15px;
+      line-height: 1.65;
+    }
+
+    .bubble.user {
+      background: var(--red);
+      color: white;
+      border-bottom-right-radius: 4px;
+      box-shadow: 0 6px 16px rgba(226,0,26,0.18);
+    }
+
+    .bubble.bot {
+      background: white;
+      border: 1px solid var(--panel-border);
+      border-bottom-left-radius: 4px;
+      color: var(--text);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.04);
+    }
+
+    .bubble b {
+      font-weight: 700;
+      color: var(--red);
+    }
+
+    .bubble.user b {
+      color: white;
+    }
+
+    .msg-time {
+      font-size: 11px;
+      color: var(--muted);
+      margin-top: 8px;
+      padding: 0 4px;
+      font-weight: 600;
+    }
+
+    .msg.user .msg-time {
+      text-align: right;
+    }
+
+    /* Rich cards */
+    .rec-card {
+      background: white;
+      border: 1px solid rgba(226,0,26,0.15);
+      border-radius: 16px;
+      padding: 18px 22px;
+      margin-top: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      transition: all 0.3s;
+      border-left: 5px solid var(--red);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+    }
+
+    .rec-card:hover {
+      border-color: rgba(226,0,26,0.4);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(226,0,26,0.12);
+    }
+
+    .rec-label {
+      font-size: 10px;
+      color: var(--red);
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+    }
+
+    .rec-name {
+      font-weight: 800;
+      font-size: 16px;
+      color: var(--dark);
+    }
+
+    .rec-link {
+      color: white;
+      background: var(--red);
+      padding: 8px 18px;
+      border-radius: 100px;
+      font-size: 12px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      white-space: nowrap;
+      transition: background 0.2s;
+    }
+
+    .rec-card:hover .rec-link {
+      background: var(--red-dark);
+    }
+
+    .insight {
+      background: #FDFDFD;
+      border: 1px solid var(--panel-border);
+      border-radius: 16px;
+      padding: 18px;
+      margin-top: 14px;
+      display: flex;
+      gap: 14px;
+    }
+
+    .insight-icon {
+      width: 38px;
+      height: 38px;
+      background: white;
+      border: 1px solid rgba(0,0,0,0.05);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      flex-shrink: 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+
+    .insight-title {
+      font-weight: 800;
+      font-size: 13px;
+      margin-bottom: 6px;
+      color: var(--dark);
+    }
+
+    .insight-text {
+      font-size: 13.5px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    /* SCENARIO BAR */
+    .scenario-bar {
+      padding: 40px 40px 16px;
+      flex-shrink: 0;
+      background: transparent;
+      position: relative;
+    }
+
+    .scenario-bar::before {
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: 40px;
+      right: 40px;
+      height: 1px;
+      background: rgba(0,0,0,0.05);
+    }
+
+    .scenario-label {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 14px;
+    }
+
+    .scenario-chips {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .scenario-chip {
+      background: white;
+      border: 1px solid var(--panel-border);
+      border-radius: 100px;
+      padding: 10px 18px;
+      font-size: 13px;
+      color: var(--text);
+      font-family: inherit;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.25s;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+    }
+
+    .scenario-chip:hover {
+      border-color: rgba(226,0,26,0.3);
+      color: var(--red);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(226,0,26,0.08);
+    }
+
+    /* INPUT */
+    .input-area {
+      padding: 12px 40px 32px;
+      flex-shrink: 0;
+      background: transparent;
+    }
+
+    .input-box {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: white;
+      border: 1px solid var(--panel-border);
+      border-radius: 18px;
+      padding: 14px 16px;
+      transition: all 0.3s;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.04);
+    }
+
+    .input-box:focus-within {
+      border-color: rgba(226,0,26,0.4);
+      box-shadow: 0 8px 28px rgba(226,0,26,0.12);
+    }
+
+    .input-field {
+      flex: 1;
+      background: none;
+      border: none;
+      outline: none;
+      font-family: inherit;
+      font-size: 15px;
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    .input-field::placeholder {
+      color: var(--dim);
+      font-weight: 500;
+    }
+
+    .send-btn {
+      width: 44px;
+      height: 44px;
+      background: var(--red);
+      border: none;
+      border-radius: 14px;
+      cursor: pointer;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.25s;
+      box-shadow: 0 4px 14px rgba(226,0,26,0.2);
+    }
+
+    .send-btn:hover {
+      background: var(--red-dark);
+      box-shadow: 0 6px 20px rgba(226,0,26,0.3);
+      transform: scale(1.05);
+    }
+
+    .send-btn svg {
+      display: block;
+    }
+
+    /* TYPING */
+    .typing {
+      display: flex;
+      gap: 6px;
+      padding: 16px 22px;
+      align-items: center;
+    }
+
+    .typing-dot {
+      width: 7px;
+      height: 7px;
+      background: var(--red);
+      border-radius: 50%;
+      animation: bounce 1.2s ease-in-out infinite;
+      opacity: 0.4;
+    }
+
+    .typing-dot:nth-child(2) {
+      animation-delay: 0.18s;
+    }
+
+    .typing-dot:nth-child(3) {
+      animation-delay: 0.36s;
+    }
+
+    @keyframes bounce {
+      0%,60%,100% {
+        transform: translateY(0);
+        opacity: 0.4;
+      }
+
+      30% {
+        transform: translateY(-6px);
+        opacity: 1;
+      }
+    }
+
+    @keyframes msgIn {
+      from {
+        opacity: 0;
+        transform: translateY(16px) scale(0.98);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="bg-layer">
+  <div class="bg-orb bg-orb-1"></div>
+  <div class="bg-orb bg-orb-2"></div>
+</div>
+
+<nav class="nav">
+  <div class="nav-brand">
+    <a class="nav-uc-logo" href="index.html" aria-label="UniCredit">
+      <img src="assets/unicreditlogo_clean.png" alt="UniCredit Logo" class="nav-uc-logo-img">
+    </a>
+  </div>
+
+  <div class="nav-right">
+    <a class="nav-back" href="index.html">← Înapoi la home</a>
+  </div>
+</nav>
+
+<div class="layout">
+
+  <div class="sidebar">
+    <div class="sidebar-section-label">Profilul tău</div>
+    <div class="chips" id="sidebar-chips">
+      <!-- Profile chips will be loaded dynamically here -->
+    </div>
+
+    <div class="sidebar-sep"></div>
+
+    <div class="sidebar-section-label">Acțiuni rapide</div>
+    <div class="quick-actions">
+      <div class="quick-action"><span class="qa-icon">📊</span> Raport financiar</div>
+      <div class="quick-action"><span class="qa-icon">🎯</span> Obiectivele mele</div>
+      <div class="quick-action"><span class="qa-icon">📞</span> Contactează advisor</div>
+    </div>
+  </div>
+
+  <div class="chat-main">
+
+    <div class="chat-topbar">
+      <div class="topbar-left">
+        <div class="topbar-ava">
+          <img src="assets/maini_final.png" alt="BeMyHelp">
+        </div>
+        <div>
+          <div class="topbar-name">BeMyHelp</div>
+        </div>
+      </div>
+      <div class="topbar-actions">
+        <div class="icon-btn" title="Istoric">🕐</div>
+        <div class="icon-btn" title="Setări">⚙</div>
+      </div>
+    </div>
+
+    <div class="messages" id="messages">
+    </div>
+
+    <div class="scenario-bar">
+      <div class="scenario-label">Explorează scenarii</div>
+      <div class="scenario-chips">
+        <button class="scenario-chip" onclick="quickSend(this)">≡ Compară opțiunile</button>
+        <button class="scenario-chip" onclick="quickSend(this)">⚡ Ce dacă economisesc mai mult?</button>
+        <button class="scenario-chip" onclick="quickSend(this)">👨‍💼 Vorbesc cu un advisor</button>
+      </div>
+    </div>
+
+    <div class="input-area">
+      <div class="input-box">
+        <input class="input-field" id="msgInput" placeholder="Scrie un mesaj..." onkeydown="if(event.key==='Enter'){sendMsg();}">
+        <button class="send-btn" onclick="sendMsg()">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="22" y1="2" x2="11" y2="13"></line>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  const msgsEl = document.getElementById('messages');
+  let currentProfile = JSON.parse(localStorage.getItem('bemyhelpProfile')) || {};
+  let pendingQuestions = [];
+  let currentQuestionIndex = 0;
+  let pendingMessage = "";
+  let conversationHistory = "";
+
+  // Update UI chips based on profile
+  function updateSidebarChips() {
+    const chipsContainer = document.getElementById('sidebar-chips');
+    chipsContainer.innerHTML = '';
+    
+    if (currentProfile.goal) {
+      chipsContainer.innerHTML += `
+        <div class="chip">
+          <span class="chip-label">Situație</span>
+          <span class="chip-val">${currentProfile.goal}</span>
+        </div>`;
+    }
+    
+    if (currentProfile.income) {
+      chipsContainer.innerHTML += `
+        <div class="chip">
+          <span class="chip-label">Venit lunar</span>
+          <span class="chip-val">${currentProfile.income}</span>
+        </div>`;
+    }
+    
+    if (currentProfile.risk) {
+      chipsContainer.innerHTML += `
+        <div class="chip">
+          <span class="chip-label">Obiectiv</span>
+          <span class="chip-val">${currentProfile.risk}</span>
+        </div>`;
+    }
+
+    if (currentProfile.timeline) {
+      chipsContainer.innerHTML += `
+        <div class="chip">
+          <span class="chip-label">Personalitate</span>
+          <span class="chip-val">${currentProfile.timeline}</span>
+        </div>`;
+    }
+
+    if(Object.keys(currentProfile).length <= 1) {
+       chipsContainer.innerHTML += `
+        <div class="chip">
+          <span class="chip-label">Status</span>
+          <span class="chip-val">Fără profil</span>
+        </div>`;
+    }
+  }
+
+  updateSidebarChips();
+
+
+  function addMsg(html, isUser) {
+    const time = new Date().toLocaleTimeString('ro', { hour: '2-digit', minute: '2-digit' });
+    const d = document.createElement('div');
+
+    if (isUser === true) {
+      d.className = 'msg user';
+      d.innerHTML = `
+          <div class="msg-ava user">👤</div>
+          <div class="msg-body">
+            <div class="bubble user">${html}</div>
+            <div class="msg-time">${time}</div>
+          </div>`;
+    } else {
+      d.className = 'msg bot';
+      d.innerHTML = `
+          <div class="msg-ava bot">
+            <img src="assets/maini_final.png" alt="BeMyHelp" style="width:100%;height:100%;object-fit:contain;padding:4px;">
+          </div>
+          <div class="msg-body">
+            <div class="bubble bot">${html}</div>
+            <div class="msg-time">${time}</div>
+          </div>`;
+    }
+
+    msgsEl.appendChild(d);
+    msgsEl.scrollTop = msgsEl.scrollHeight;
+  }
+
+  function showTyping() {
+    const t = document.createElement('div');
+    t.id = 'typing';
+    t.className = 'msg bot';
+    t.innerHTML = `
+          <div class="msg-ava bot">
+            <img src="assets/maini_final.png" alt="BeMyHelp" style="width:100%;height:100%;object-fit:contain;padding:4px;">
+          </div>
+          <div class="msg-body">
+            <div class="bubble bot">
+              <div class="typing"><div class="typing-dot"></div><div class="typing-dot"></div><div class="typing-dot"></div></div>
+            </div>
+          </div>`;
+    msgsEl.appendChild(t);
+    msgsEl.scrollTop = msgsEl.scrollHeight;
+  }
+
+  function hideTyping() {
+    const t = document.getElementById('typing');
+    if (t) {
+      t.remove();
+    }
+  }
+
+  function renderOptions(question) {
+    const time = new Date().toLocaleTimeString('ro', { hour: '2-digit', minute: '2-digit' });
+    const d = document.createElement('div');
+    d.className = 'msg bot';
+    
+    let optionsHtml = question.optiuni.map((opt, i) => 
+      `<button class="scenario-chip" style="margin-top:8px; display:block; width:100%; text-align:left;" onclick="answerQuestion('${question.id}', '${opt}', this)">${opt}</button>`
+    ).join('');
+
+    d.innerHTML = `
+          <div class="msg-ava bot">
+            <img src="assets/maini_final.png" alt="BeMyHelp" style="width:100%;height:100%;object-fit:contain;padding:4px;">
+          </div>
+          <div class="msg-body">
+            <div class="bubble bot">
+              <b>${question.intrebare}</b>
+              <div style="margin-top:12px;">
+                ${optionsHtml}
+              </div>
+            </div>
+            <div class="msg-time">${time}</div>
+          </div>`;
+    msgsEl.appendChild(d);
+    msgsEl.scrollTop = msgsEl.scrollHeight;
+  }
+
+  function answerQuestion(qId, answer, btnEl) {
+    // Disable all buttons in this message
+    const buttons = btnEl.parentElement.querySelectorAll('button');
+    buttons.forEach(b => {
+      b.disabled = true;
+      if (b !== btnEl) b.style.opacity = '0.5';
+    });
+    btnEl.style.borderColor = 'var(--red)';
+    btnEl.style.color = 'var(--red)';
+    
+    addMsg(answer, true);
+    
+    currentProfile[qId] = answer;
+    currentQuestionIndex++;
+    
+    if (currentQuestionIndex < pendingQuestions.length) {
+      setTimeout(() => {
+        renderOptions(pendingQuestions[currentQuestionIndex]);
+      }, 600);
+    } else {
+      currentProfile['status_profilare'] = 'complet';
+      setTimeout(() => {
+        addMsg("Mulțumesc! Acum că te cunosc mai bine, hai să revenim la cererea ta...", false);
+        doApiCall(pendingMessage);
+      }, 1000);
+    }
+  }
+
+  async function doApiCall(text) {
+    showTyping();
+    try {
+      const response = await fetch('/api/chat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ 
+          message: text, 
+          profile: Object.keys(currentProfile).length > 0 ? JSON.stringify(currentProfile) : "",
+          history: conversationHistory
+        })
+      });
+      
+      const data = await response.json();
+      hideTyping();
+      
+      if (data.tip_raspuns === 'onboarding_questions') {
+        if (data.validare_emotionala) {
+          addMsg(data.validare_emotionala, false);
+        }
+        pendingMessage = text;
+        pendingQuestions = data.intrebari || [];
+        currentQuestionIndex = 0;
+        if (pendingQuestions.length > 0) {
+          setTimeout(() => renderOptions(pendingQuestions[0]), 800);
+        }
+      } else {
+        // Build the rich answer
+        let html = '';
+        if (data.validare_emotionala) {
+          html += data.validare_emotionala + '<br><br>';
+        }
+        if (data.solutie_scurt_termen) {
+          html += data.solutie_scurt_termen + '<br><br>';
+        }
+        if (data.solutie_lung_termen) {
+          html += data.solutie_lung_termen;
+        }
+        
+        let extraHtml = '';
+        if (data.produs_unicredit_recomandat && data.produs_unicredit_recomandat !== 'Nu am detalii in document') {
+          extraHtml += `
+            <div class="rec-card">
+              <div>
+                <div class="rec-label">Produs Recomandat</div>
+                <div class="rec-name">${data.produs_unicredit_recomandat}</div>
+              </div>
+              <div class="rec-link">Vezi planul →</div>
+            </div>`;
+        }
+        if (data.disclaimer) {
+          extraHtml += `
+            <div class="insight">
+              <div class="insight-icon">ℹ️</div>
+              <div>
+                <div class="insight-text" style="font-size:11px;">${data.disclaimer}</div>
+              </div>
+            </div>`;
+        }
+        
+        let cleanText = html.replace(/<br><br>/g, " ").trim();
+        conversationHistory += "Bot: " + cleanText + "\\n";
+        
+        // Output bubble with extraHtml separately if we want, or together
+        addMsg(html + extraHtml, false);
+      }
+    } catch (err) {
+      hideTyping();
+      addMsg("A apărut o eroare la conectarea cu serverul: " + err, false);
+    }
+  }
+
+  function sendMsg() {
+    const inp = document.getElementById('msgInput');
+    const txt = inp.value.trim();
+    if (txt === "") return;
+    
+    inp.value = '';
+    addMsg(txt, true);
+    conversationHistory += "User: " + txt + "\\n";
+    
+    if (pendingQuestions.length > 0 && currentQuestionIndex < pendingQuestions.length) {
+      addMsg("Te rog selectează una dintre opțiunile de mai sus pentru a continua.", false);
+      return;
+    }
+    
+    doApiCall(txt);
+  }
+
+  function quickSend(btn) {
+    const txt = btn.textContent.trim();
+    addMsg(txt, true);
+    conversationHistory += "User: " + txt + "\\n";
+    
+    if (pendingQuestions.length > 0 && currentQuestionIndex < pendingQuestions.length) {
+      addMsg("Te rog selectează una dintre opțiunile de mai sus pentru a continua.", false);
+      return;
+    }
+    
+    doApiCall(txt);
+  }
+</script>
+</body>
+</html>

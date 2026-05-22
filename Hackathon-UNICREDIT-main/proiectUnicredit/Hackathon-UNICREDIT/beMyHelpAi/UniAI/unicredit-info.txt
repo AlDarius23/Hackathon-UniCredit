@@ -1,0 +1,399 @@
+﻿Raport de Cercetare și Ghid Complet de Antrenare Conversațională pentru Asistentul Virtual al UniCredit Bank
+Acest raport reprezintă o sinteză tehnică a tuturor informațiilor oficiale, procedurilor de lucru, tarifelor, comisioanelor și caracteristicilor de produse ale UniCredit Bank S.A., structurată pentru a fi utilizată direct în antrenarea modelelor de limbaj ale asistenților virtuali din cadrul băncii. Datele incluse reflectă cu exactitate terminologia de specialitate, condițiile de eligibilitate și adresele punctelor de lucru, oferind un suport informativ complet pentru interacțiunea directă cu clienții băncii.
+________________
+Istoricul Instituțional, Structura de Guvernanță și Subsidiarele Grupului
+UniCredit Bank S.A. funcționează ca o instituție bancară majoră pe piața din România, oferind o gamă integrată de servicii de retail, comerciale și de trezorerie atât în moneda națională, cât și în valute străine.1 Sediul central al băncii este înregistrat în București, pe Bulevardul Expoziției, numărul 1F, sectorul 1.1
+Din punct de vedere istoric, instituția a fost înființată în anul 1991 sub denumirea de Banca Comercială Ion Țiriac S.A..1 Aceasta a parcurs o serie de transformări structurale prin fuziuni succesive.1 Prima etapă semnificativă a avut loc la data de 1 septembrie 2006, când s-a realizat fuziunea cu HVB Bank România S.A., luând naștere entitatea Banca Comercială HVB Țiriac S.A..1 Ulterior, s-a desfășurat o fuziune prin absorbție cu UniCredit România S.A., entitatea absorbită, urmată de fuziunea prin absorbție a Alpha Bank România S.A., proces finalizat la data de 15 august 2025, prin care UniCredit Bank S.A. a preluat calitatea de bancă absorbantă autorizată de Banca Națională a României.1
+Banca este organizată ca o societate pe acțiuni, fiind înregistrată la Registrul Comerțului sub numărul de ordine J40/7706/1991, având Codul Unic de Înregistrare RO361536 și numărul de înregistrare în registrul bancar RB-PJR-40-011/1999.1 Structura consolidată a Grupului UniCredit cuprinde UniCredit Bank S.A. în calitate de societate mamă și trei filiale deținute: UniCredit Consumer Financing IFN S.A., desemnată prin acronimul UCFIN, UniCredit Leasing Corporation IFN S.A., identificată prin UCLC, și UniCredit Insurance Broker S.R.L..1 Conducerea băncii este asigurată prin structura dualistă compusă dintr-un Consiliu de Supraveghere și un Directorat, respectând strict indicatorii de lichiditate și cerințele de capital stabilite de reglementările băncii centrale și de legislația europeană direct aplicabilă.2
+________________
+Rețeaua Națională de Sucursale și Unități Teritoriale
+Pentru asistența fizică a clienților și efectuarea operațiunilor complexe care nu pot fi procesate prin canalele digitale, UniCredit Bank menține o rețea de sucursale și agenții în principalele localități din România.4
+
+
+Denumire Sucursală
+	Oraș
+	Județ / Sector
+	Adresă Exactă
+	Sucursala Avram Iancu Arad
+	Arad
+	Arad
+	Piața Avram Iancu nr. 13 4
+	Sucursala Aviației București
+	București
+	Sector 1
+	Șoseaua Pipera nr. 35, bl. 5B, parter 4
+	Sucursala Nicolae Bălcescu Bacău
+	Bacău
+	Bacău
+	Bulevardul Nicolae Bălcescu nr. 1 4
+	Sucursala Bârlad
+	Bârlad
+	Vaslui
+	Bulevardul Republicii nr. 200 4
+	Sucursala Baia Mare
+	Baia Mare
+	Maramureș
+	Bulevardul București nr. 3 4
+	Sucursala Botoșani
+	Botoșani
+	Botoșani
+	Calea Națională nr. 152 4
+	Sucursala Brăila
+	Brăila
+	Brăila
+	Calea Călărașilor nr. 15 4
+	Sucursala Piața Sfatului Brașov
+	Brașov
+	Brașov
+	Strada Mureșenilor nr. 2 4
+	Sucursala Carol București
+	București
+	Sector 2
+	Bulevardul Carol nr. 65, bl. 2 bis 4
+	Sucursala Matei Corvin Cluj-Napoca
+	Cluj-Napoca
+	Cluj
+	Piața Unirii nr. 10 4
+	Sucursala Tomis Constanța
+	Constanța
+	Constanța
+	Bulevardul Tomis nr. 132 4
+	Sucursala Oltenia Craiova
+	Craiova
+	Dolj
+	Strada Madona Dudu nr. 3, bl. 1-3-5 4
+	Sucursala Alba-Iulia București
+	București
+	Sector 3
+	Bulevardul Unirii nr. 80, bl. J1, tronson 1 4
+	Sucursala Vrancea Focșani Retail
+	Focșani
+	Vrancea
+	Strada Republicii nr. 92 4
+	Sucursala Brateș Galați
+	Galați
+	Galați
+	Bulevardul George Coșbuc nr. 1 4
+	Sucursala Charles De Gaulle București
+	București
+	Sector 1
+	Piața Charles de Gaulle nr. 15 4
+	Sucursala Iași Retail
+	Iași
+	Iași
+	Strada Anastasie Panu nr. 23, bl. Muntenia și bl. 7 Noiembrie 4
+	Sucursala Izvor București
+	București
+	Sector 5
+	Bulevardul Libertății nr. 20, bl. 3, tronson I-II 4
+	Sucursala Nicolae Grigorescu București
+	București
+	Sector 2
+	Strada Theodor Pallady nr. 2, bl. M2A, parter 4
+	Sucursala Militari București
+	București
+	Sector 6
+	Bulevardul Iuliu Maniu nr. 73, bl. C3 4
+	Sucursala Millennium București
+	București
+	Sector 1
+	Calea Victoriei nr. 88 4
+	Sucursala Mihai Viteazu Oradea Retail
+	Oradea
+	Bihor
+	Piața Unirii nr. 2-4 4
+	Agenția Pantelimon București
+	București
+	Sector 2
+	Șoseaua Pantelimon nr. 350, bl. 4 4
+	Sucursala Argeș Pitești Retail
+	Pitești
+	Argeș
+	Strada I.C. Brătianu nr. 26 4
+	________________
+Oferte Tranzacționale și Pachete de Cont Curent pentru Persoane Fizice
+Gama de conturi curente pentru persoane fizice este structurată sub formă de pachete de servicii cu beneficii specifice și costuri corelate cu volumul tranzacțional și rulajul de încasări.5
+Aplicația Mobile Banking permite deschiderea directă și 100% online a primului cont curent.5 Pentru persoanele care se confruntă cu un grad ridicat de vulnerabilitate financiară, UniCredit Bank reglementează un Cont de plăți cu servicii de baza.5 Acesta este accesibil clienților care nu dețin niciun alt cont de plăți activ în România și ale căror venituri brute lunare nu depășesc echivalentul a 60% din câștigul salarial mediu brut pe economie, conform prognozei macroeconomice pentru anul 2026.5
+Mutarea relatiilor bancare de la alte instituții de credit se poate derula simplificat prin intermediul Serviciului Portare Cont.5 Clientul efectuează o singură vizită la o sucursală UniCredit, completând un mandat prin care banca preia gestiunea transferului soldurilor pozitive, mandatelor de debitare directă active pentru furnizorii de utilități, ordinelor de plată programate și încasărilor de tip salariu sau pensie, alături de închiderea formală a vechiului cont.5
+Programul de loialitate tranzacțională include facilitarea Happy Hour Exchange Rate.6 Aceasta permite clienților care dețin pachetele incluse în program să efectueze tranzacții de schimb valutar direct în Mobile Banking la cursul oficial de referință publicat de Banca Națională a României, în limita a maximum 1.000 EUR pe zi, de luni până vineri, strict în intervalul orar 13:15 – 14:15.5
+
+
+Tip Pachet
+	Cost de Administrare Lunar
+	Rulaj Lunar de Încasări Necesar
+	Condiții Operaționale Suplimentare
+	Beneficii și Servicii Incluse
+	Optim 7
+	0 Lei în caz de îndeplinire condiții 7
+	Minimum 2.000 Lei (sau echivalent în cont) sau deținere active de minimum 50.000 Lei 7
+	Minimum o plată lunară efectuată la POS sau online cu cardul de debit fizic ori virtual 7
+	Cont curent în Lei și Euro gratuit, plăți și încasări interbancare în Lei gratuite prin canale digitale, retrageri nelimitate în Lei la ATM-urile UniCredit și Euronet, 4 retrageri gratuite pe lună la alte bănci, acces la ShopSmart și opțiune de descoperit de cont de până la 3 salarii nete.7
+	Star 8
+	0 Lei în caz de îndeplinire condiții 8
+	Minimum 5.000 Lei (sau echivalent în cont) sau deținere active de minimum 150.000 Lei 8
+	Minimum o plată lunară efectuată la POS sau online cu cardul de debit fizic ori virtual 8
+	Cont curent gratuit în Lei, Euro și USD, plăți și încasări interbancare gratuite, retrageri gratuite nelimitate în Lei la ATM-uri proprii și Euronet, retrageri valutare gratuite în rețeaua internațională a grupului, 4 retrageri gratuite pe lună la alte bănci naționale/internaționale, servicii de asigurare gratuite atașate cardului Mastercard Gold.8
+	Premium 9
+	0 Lei în caz de îndeplinire condiții 9
+	Reglementat prin condiții de cont premium și consultanță dedicată 9
+	Realizarea a cel puțin o plată lunară cu cardul de debit Platinum la comercianți pentru scutirea comisionului 9
+	Până la 5 carduri virtuale Mastercard Standard în Lei sau Euro, zero costuri la încasări și plăți interbancare online, retrageri gratuite în valută în rețeaua grupului și a altor bănci străine, retrageri în Euro la multifuncționalele BNA, asigurări Premium, Priority Pass, acces în Business Lounge și Concierge.9
+	În situația în care, pe parcursul unei luni calendaristice, clientul nu îndeplinește în mod cumulativ condițiile de eligibilitate specifice pachetului său, acesta este automat încadrat pe Oferta Standard a băncii, modificarea de tarifare intrând în vigoare după data de 10 a lunii următoare.8
+________________
+Carduri de Debit Fizice, Carduri Virtuale și Servicii de Cash
+Cardurile de debit UniCredit acoperă atât instrumentele fizice standard sau de elită, cât și soluțiile exclusiv virtuale, destinate plăților sigure.10
+Detaliile Cardului de Debit Virtual
+Cardul virtual de debit oferit de UniCredit Bank este un produs complet digital, conceput pentru posesorii de conturi curente în Lei sau Euro care au împlinit vârsta de 18 ani.11 Acesta se emite pe loc din Mobile Banking și beneficiază de un comision de 0 Lei pentru emitere și pentru reînnoire.11 Clientul poate solicita până la 5 carduri virtuale active atașate fiecărui cont curent în Lei sau Euro.11
+Aceste carduri sunt disponibile sub însemnele Mastercard Standard, oferind cinci opțiuni de culori (Pure Red, Electric Violet, Clean Green, Vibrant Orange sau Jazzy Blue), ori sub brandul Mastercard Gold, cu trei variante vizuale (Warm Yellow, Light Beige sau Jet Black).11 Cardurile virtuale nu dețin și nu necesită un cod PIN fizic.11 Plățile efectuate la terminalele comercianților prin intermediul portofelelor electronice Apple Pay și Google Pay se autorizează folosind codul de deblocare sau datele biometrice ale telefonului, în timp ce securitatea tranzacțiilor pe internet este garantată prin protocolul 3D Secure.11
+Este strict reglementat faptul că un card virtual nu poate fi utilizat pentru interogarea soldului sau pentru retrageri de numerar de la ATM prin atingere contactless directă.11 În absența cardului fizic, utilizatorii pot obține numerar fie apelând la retragerea prin cod mCash de la ATM-urile proprii, fie utilizând facilitatea de Cash-Back la POS la comercianții participanți.11
+Serviciul mCash de Retragere fără Card
+Prin mCash, clienții pot retrage numerar de la bancomatele și multifuncționalele BNA ale UniCredit fără a folosi un card fizic, generând un cod direct din aplicația Mobile Banking.12 Operațiunea este comisionată cu 0 Lei și este valabilă exclusiv pentru eliberarea de monedă națională (Lei) din conturile curente active, fiind excluse de la acest serviciu conturile de tip Junior.12
+Pentru validarea tranzacției la ATM, clientul introduce codul primit în aplicație, iar codul PIN solicitat de terminal este compus din cifrele sumei ce urmează a fi retrase (spre exemplu, pentru o sumă de 350 Lei, PIN-ul de confirmare tastat la bancomat va fi 350).12 Limita maximă admisă pentru o singură tranzacție mCash este de 2.000 Lei, iar plafonul zilnic cumulat este de maximum 4.000 Lei.12 Codul generat își păstrează valabilitatea timp de exact o oră, iar generarea sa blochează suma respectivă din cont; în caz de anulare sau expirare, banii sunt returnați instantaneu în cont.12 Codul poate fi generat în zilele lucrătoare în intervalul orar 07:00 – 22:00, iar sâmbăta, duminica și în zilele de sărbătoare legală, funcționalitatea este accesibilă non-stop.13
+Retragerea de Euro de la Terminalele BNA
+Clienții persoane fizice care dețin un card de debit activ emis de UniCredit Bank pot efectua retrageri de numerar în Euro (EUR) direct de la terminalele de tip BNA (multifuncționale) din rețeaua proprie a băncii.12 Această operațiune implică perceperea unui comision standard de 1% din valoarea tranzacției, cu o sumă minimă garantată de plată de 2 EUR.13 Terminalele eliberează exclusiv bancnote cu valoarea nominală de 50 EUR, nefiind posibile retrageri care implică alte cupoane valorice.12
+________________
+Carduri de Credit UniCreditCard
+UniCredit Bank, prin emitentul UniCredit Consumer Financing, distribuie cardurile de credit din gama UniCreditCard (Principal, Premium și Partener), care acționează ca instrumente flexibile pentru plăți zilnice și achiziții în rate.14
+Structură, Limite și Costuri Asociate
+* UniCreditCard Principal: Limita minimă este stabilită la 700 Lei, în timp ce limita maximă de creditare poate atinge 35.000 Lei.14 Costul de emitere al cardului principal este de 39 Lei, iar taxa anuală de administrare este de 39 Lei, devenind aplicabilă începând cu al doilea an de contract.14 Pentru un card suplimentar atașat, taxa este de 25 Lei pe an.14 Dobânda fixă anuală aplicată este de 24,99% pentru tranzacțiile efectuate la comercianți sau pe internet și de 26,99% pentru sumele retrase de la bancomate, în timp ce dobânda penalizatoare pentru întârzierea la plată este de 27,99% pe an.14
+* UniCreditCard Premium: Limita de creditare este cuprinsă între un prag minim de 4.000 Lei și un maxim de 70.000 Lei.15 Cardul principal beneficiază de 0 Lei taxă de emitere, dar presupune o taxă de administrare de 200 Lei pe an, aplicată și datorată începând chiar din primul an de utilizare.15 Cardul suplimentar implică un cost de administrare de 50 Lei pe an.15 Rata dobânzii este unică și fixă, fiind reglementată la 27,99% pe an atât pentru plățile la comercianți, cât și pentru retragerile de numerar.15 Dobânda penalizatoare aplicabilă este de 30,99% pe an.15
+* UniCreditCard Partener: Acest instrument de plată oferă o limită minimă de creditare de 700 Lei, plafonul maxim fiind limitat la 30.000 Lei.16
+Reguli de Rambursare și Programe de Rate
+Perioada de grație acordată clienților este de maximum 56 de zile, fiind aplicabilă exclusiv tranzacțiilor derulate la POS, pe internet sau pentru achitarea facturilor de utilități.15 Pentru a nu datora dobândă, clientul trebuie să achite integral suma utilizată până la data scadenței lunare.15
+În caz contrar, suma minimă obligatorie de plată se calculează lunar, fiind compusă din 2% (în cazul cardului Premium) sau 4% (în cazul cardului Principal) din valoarea creditului utilizat în ciclul de tranzacționare, la care se adaugă în proporție de 100% toate dobânzile, comisioanele, ratele scadente, primele de asigurare aplicabile și eventualele depășiri ale limitei de credit.14 Suma minimă obligatorie de plată pentru cardul Principal nu poate fi mai mică de 25 Lei.14
+Programul de Plată în Rate permite divizarea tranzacțiilor de minimum 300 Lei în rate lunare egale.14 Pentru cardul Principal, clienții beneficiază de dobândă de 0% pentru rambursări de până la 12 rate în primele 60 de zile de la emiterea cardului, pentru tranzacții efectuate oriunde în lume.14 Cardul Premium permite selectarea a maximum 9 rate fără dobândă în primele 6 luni de la primirea cardului.15
+De asemenea, orice tranzacție individuală sau cumulată de minimum 300 Lei poate fi convertită, la alegerea clientului, în maximum 36 de rate cu o dobândă fixă redusă de 16,99% pe an.14 În plus, activarea cardului și setarea codului PIN se realizează direct la orice ATM UniCredit, prin introducerea cardului și utilizarea codului de securitate transmis prin SMS.15
+________________
+Soluții de Creditare de Consum și Ipotecară pentru Persoane Fizice
+Ofertele de creditare sunt structurate în funcție de destinația fondurilor, fiind disponibile credite negarantate de realizări personale și credite imobiliare garantate cu ipotecă.17
+Creditul de Realizări Personale (Fără Ipotecă)
+Împrumutul negarantat permite accesarea unor sume cuprinse între 1.500 și 250.000 Lei, cu o perioadă de rambursare flexibilă, stabilită contractual între 12 și 60 de luni.17 Clasa de dobânzi este de tip fix pe întreaga durată, variind între 5,99% și 20,99% pe an, în funcție de profilul financiar al clientului și de opțiunea de a contracta servicii adiționale.17
+Din punct de vedere operațional, rambursarea se poate face în rate egale sau descrescătoare.17 Alegerea ratelor egale (anuități) determină o capacitate de îndatorare mai mare pentru solicitant (se încadrează la o sumă mai mare), însă ritmul de stingere a soldului este mai lent, generând o dobândă totală achitată mai ridicată.17 În contrapondere, ratele descrescătoare presupun o rată lunară mai mare în prima parte a perioadei de creditare, însă reduc soldul mai rapid și generează un cost total cu dobânda semnificativ mai mic.17
+Criteriile minime de eligibilitate impun ca solicitantul să aibă vârsta cuprinsă între 22 și 70 de ani la scadența finală a creditului (pentru cadrele de navigatori brevetate limitele sunt de 25-65 de ani, iar pentru cei nebrevetati vârsta maximă este de 60 de ani).17 Venitul lunar net eligibil trebuie să fie de cel puțin 1.281 Lei pentru pensionari, 2.146 Lei pentru salariați și 1.495 Lei pentru persoanele aflate în concediu de creștere a copilului.17 Pentru solicitările de credite care depășesc pragul de 150.000 Lei, solicitantul trebuie să facă dovada unui venit net individual de minimum 10.000 Lei sau a unui venit cumulat la nivel de familie de cel puțin 13.000 Lei.19
+Pentru a stimula economisirea și fidelizarea clienților, UniCredit aplică o reducere a dobânzii cu 2 puncte procentuale în condițiile respectării clauzei de rulaj lunar, care presupune încasarea recurentă în conturile proprii a cel puțin 70% din valoarea venitului net luat în considerare la aprobarea creditului.17
+Grila de Dobânzi Fixe (cu îndeplinirea Condiției de Rulaj de Încasări)
+
+
+Sumă Creditată (Lei)
+	Dobândă Fixă (Fără Asigurare)
+	Dobândă Fixă (Cu Asigurare de Viață)
+	Dobândă Fixă (Refinanțare externă / Card credit)
+	Dobândă Fixă (Refinanțare/Card + Asigurare)
+	230.000 – 250.000
+	10,99% 17
+	9,99% 17
+	8,99% 17
+	7,99% 17
+	200.000 – 229.999
+	12,49% 17
+	11,49% 17
+	10,49% 17
+	9,49% 17
+	170.000 – 199.999
+	13,49% 17
+	12,49% 17
+	11,49% 17
+	10,49% 17
+	140.000 – 169.999
+	13,99% 17
+	12,99% 17
+	11,99% 17
+	10,99% 17
+	110.000 – 139.999
+	14,49% 17
+	13,49% 17
+	12,49% 17
+	11,49% 17
+	80.000 – 109.999
+	15,99% 17
+	14,99% 17
+	13,99% 17
+	12,99% 17
+	50.000 – 79.999
+	17,99% 17
+	16,99% 17
+	15,99% 17
+	14,99% 17
+	1.500 – 49.999
+	20,99% 17
+	19,99% 17
+	18,99% 17
+	17,99% 17
+	Grila de Dobânzi Standard (fără îndeplinirea Condiției de Rulaj de Încasări)
+În situațiile în care condiția de rulaj nu este respectată, banca recalculează ratele aplicând dobânda standard corespunzătoare soldului.17
+
+
+Sumă Creditată (Lei)
+	Dobândă Standard (Fără Asigurare)
+	Dobândă Standard (Cu Asigurare de Viață)
+	Dobândă Standard (Refinanțare externă / Card credit)
+	Dobândă Standard (Refinanțare/Card + Asigurare)
+	230.000 – 250.000
+	10,99% 17
+	9,99% 17
+	8,99% 17
+	7,99% 17
+	200.000 – 229.999
+	12,49% 17
+	11,49% 17
+	10,49% 17
+	9,49% 17
+	170.000 – 199.999
+	13,49% 17
+	12,49% 17
+	11,49% 17
+	10,49% 17
+	140.000 – 169.999
+	13,99% 17
+	12,99% 17
+	11,99% 17
+	10,99% 17
+	110.000 – 139.999
+	14,49% 17
+	13,49% 17
+	12,49% 17
+	11,49% 17
+	80.000 – 109.999
+	15,99% 17
+	14,99% 17
+	13,99% 17
+	12,99% 17
+	50.000 – 79.999
+	17,99% 17
+	16,99% 17
+	15,99% 17
+	14,99% 17
+	1.500 – 49.999
+	20,99% 17
+	19,99% 17
+	18,99% 17
+	17,99% 17
+	Rambursarea ratelor se poate efectua prin intermediul codului de bare înscris în graficul de rambursare, prin transfer IBAN sau debitare automată.20 Timpul de procesare al plăților este de 1 zi lucrătoare pentru transferurile din conturi proprii UniCredit și de 2 zile lucrătoare pentru transferurile provenite de la alte instituții bancare.20
+În caz de dificultăți financiare, clientul poate solicita în scris, cu minimum 5 zile lucrătoare înainte de scadență, o amânare la plată sau o diminuare a ratei.20 Solicitarea este eligibilă doar dacă se face dovada unei scăderi de cel puțin 15% a venitului lunar net sau a apariției unor cheltuieli independente neprevăzute care reprezintă minimum 15% din venitul net al familiei.20
+Finanțări Imobiliare, Creditul Verde și Programul Noua Casă
+Gama de credite imobiliare are ca trăsătură comună exprimarea exclusivă în Lei, cu o valoare maximă de finanțare de până la echivalentul în monedă națională a sumei de 350.000 EUR, pe o perioadă contractuală cuprinsă între 3 și 35 de ani.18 Avansul minim obligatoriu pornește de la 15%.18
+* Creditul Ipotecar Verde: Destinat locuințelor eficiente energetic, încadrate în clasa energetică A sau superioară.18 Oferă rate reduse de dobândă, varianta cu dobândă fixă în primii 2 ani fiind de 4,59% pe an (în condiții de rulaj și asigurare), urmând ca ulterior să se aplice dobânda variabilă formată din indicele IRCC + o marjă de 2,20% pe an.18
+* Programul Noua Casă: Finanțarea beneficiază de dobândă variabilă pe întreaga perioadă, calculată ca IRCC + marjă fixă de 2,00%.18 Comisionul de analiză a dosarului este de 0 Lei.18 Garanțiile includ ipoteca legală în favoarea băncii și a Statului Român, depozitul colateral echivalent cu 3 rate de dobândă și ipoteca mobiliară pe veniturile realizate.18
+Suma aferentă ratelor lunare se regăsește detaliată în graficul de rambursare.21 În cazul apariției unor sume suplimentare, rambursarea anticipată se poate iniția direct din Mobile Banking, prin accesarea secțiunii dedicate creditului și completarea detaliilor de plată.21
+Menținerea asigurărilor (PAD și polița facultativă de locuință la valoarea evaluată de piață) este obligatorie pe toată durata de derulare a creditului imobiliar.21 Polițele facultative acoperă riscuri majore precum incendiu, trăsnet, explozie, prăbușirea aparatelor de zbor și calamități naturale (cutremur, inundații, furtună).21 Dacă polițele sunt încheiate prin intermediul băncii, reînnoirea lor se realizează automat prin debitarea contului curent al clientului.21 Pentru polițele externe, documentele scanate și dovada achitării primelor de asigurare trebuie trimise la UniCreditBank.PoliteAsigurare@unicredit.ro.21 Taxa percepută de bancă pentru înregistrarea cesiunii poliței în Arhiva Electronică (RNPM) este de 87,60 Lei.21
+________________
+Produse de Economisire și Depozite la Termen
+Instrumentele de economisire destinate clienților persoane fizice sunt asigurate integral prin Fondul de Garantare a Depozitelor în Sistemul Bancar (FGDB), plafonul legal stabilit fiind echivalentul în Lei al sumei de 100.000 EUR per deponent, per bancă.22
+Oferte Promoționale de Economisire Active
+Depozite la Termen cu Fonduri Noi (Mobile Banking)
+Constituirea acestor depozite necesită o sumă minimă de 3.000 Lei din fonduri noi, operațiunea fiind scutită de orice comisioane de deschidere, administrare sau desființare.23
+* Maturitate de 3 luni: Dobândă fixă de 5,50% pe an.23
+* Maturitate de 6 luni: Dobândă fixă de 5,80% pe an.23
+* Maturitate de 12 luni: Dobândă fixă de 6,10% pe an.23
+Notă: În cazul constituirii acelorași depozite direct în sucursalele fizice, dobânda acordată se diminuează cu 0,30 puncte procentuale.23
+Campania Conturi de Economii cu Fonduri Noi (06.04.2026 – 30.06.2026)
+Se adresează clienților care aduc fonduri noi de minimum 2.000 Lei în contul de economii în perioada menționată.24
+* Contul de Economii Standard și Contul Junior: Dobânda oferită este de 3,5% pe an în Lei.24 Beneficiază de comisioane de 0 Lei pentru deschidere, administrare lunară și închidere.24 Conturile de economii oferă flexibilitate totală, permițând depuneri și retrageri oricând fără pierderea dobânzii calculate zilnic pe sold.22
+Regimul Fiscal de Retenție a Impozitului pe Dobândă
+Câștigurile realizate de clienți din dobânzile aferente instrumentelor de economisire sunt calificate ca venituri impozabile, impozitul fiind reținut la sursă de către bancă și virat ulterior către bugetul de stat, conform cotelor legale 22:
+* Cota de 10% se aplică persoanelor fizice rezidente în România, în statele membre ale Uniunii Europene sau în țări cu care România are încheiată o Convenție de Evitare a Dublei Impuneri.22
+* Cota de 16% se reține în cazul persoanelor fizice rezidente în state non-UE cu care România nu are încheiate acorduri sau convenții de evitare a dublei impuneri.22
+* În cazul clienților nerezidenți care depun în original un certificat de rezidență fiscală valabil pentru anul plății, se va aplica cota mai favorabilă prevăzută în convenția bilaterală respectivă.22
+________________
+Pachete Tranzacționale și Servicii pentru IMM și Corporate
+UniCredit Bank oferă soluții dedicate pentru gestionarea lichidităților, tranzacționare și acceptare de plăți destinate microîntreprinderilor și companiilor.25
+Pachetele de Cont Curent pentru IMM: MicroStar și Creativ
+* Pachetul MicroStar: Destinat companiilor cu cifra de afaceri anuală de sub 1 milion EUR, are un cost fix de 49 Lei pe lună.25 Include 2 conturi curente în Lei, 2 conturi curente în valută (EUR/USD), un card de debit Business Gold sau Silver, abonamente la BusinessNet și Business Mobile, încasări gratuite, plăți intrabancare gratuite și 10 plăți interbancare gratuite în Lei pe lună prin BusinessNet.25
+* Pachetul Creativ: Conceput pentru start-up-uri și afaceri cu cifra de afaceri sub 0,5 milioane EUR, are costul de 0 Lei în primele 12 luni, devenind ulterior 20 Lei pe lună începând cu luna a 13-a.25 Include un cont în Lei, un cont în valută, un card Business Silver, BusinessNet și Business Mobile, alături de 3 plăți interbancare gratuite în Lei pe lună și 3 retrageri gratuite de la ATM-urile proprii.25 Pachetul oferă și un program de cashback lunar la comisioane în funcție de rulajul creditor realizat prin conturi: 10 Lei returnați pentru un rulaj între 30.000 și 50.000 Lei, 15 Lei pentru rulaj între 50.000 și 70.000 Lei, și 20 Lei pentru rulaje de peste 70.000 Lei.25
+Integrarea Clienților Migrați de la Alpha Bank
+În urma finalizării procesului de fuziune de la data de 15 august 2025, pachetele deținute de clienții microîntreprinderi și IMM la Alpha Bank au fost transferate automat în pachetele corespondente din oferta UniCredit Bank.1 Noile coduri IBAN generate pot fi consultate de clienți direct prin intermediul convertorului IBAN pus la dispoziție pe platforma online a băncii.27
+Pentru menținerea beneficiilor similare, UniCredit a activat automat o serie de extraopțiuni tarifate lunar, clienții având posibilitatea de a solicita modificarea acestora în sucursale începând cu data de 18 august 27:
+* Plăți electronice interbancare în Lei nelimitate: 65 Lei pe lună.25
+* Plăți electronice interbancare în valută nelimitate: 80 Lei pe lună.25
+* Plăți și încasări în Lei cu cecuri și bilete la ordin nelimitate: 100 Lei pe lună.25
+* Retrageri nelimitate de la orice ATM din România cu cardul principal: 120 Lei pe lună.25
+* Conturi curente adiționale în Lei și valută (EUR, USD, HUF, CHF, GBP): 15 Lei pe lună per cont.25
+Acceptarea Plăților prin POS, SoftPOS și Servicii Conexe
+Comisioanele percepute comercianților clienți ai băncii pentru tranzacțiile derulate la terminalele POS sau prin intermediul aplicației SoftPOS instalată pe telefoanele Android variază în funcție de tipul de card utilizat la plată și de încadrarea tranzacției.26
+* Carduri emise de UniCredit, inclusiv cele destinate tichetelor de masă: 1,1%.28
+* Carduri de debit emise în România pentru persoane fizice: 0,7% (pentru clienți cu pachete active) 29 sau 1,1% (în absența pachetelor).28
+* Carduri comerciale (business/corporate) emise în România sau în străinătate: 1,9%.28
+* Carduri non-bancare emise în țară (tichete de masă, vouchere): 1,75%.28
+* Carduri emise în afara României pentru persoane fizice: 1,2% 29 sau 1,2% / Interchange++ (Interchange reglementat la 0,2% debit și 0,3% credit + cost de schemă Visa/Mastercard + marja băncii de 0,3%).28
+Cardurile de afaceri permit efectuarea de plăți contactless rapide fără introducerea codului PIN pentru sume de sub 100 Lei în România.30 De asemenea, prin serviciul Cash Back la POS, comercianții le pot oferi clienților posibilitatea de a retrage numerar direct de la casa de marcat, în limita a maximum 150 Lei per tranzacție, suma fiind creditată în contul companiei fără comisioane suplimentare.31
+Procesarea Plăților Interbancare și Canale de Schimb de Date
+Companiile mari (Corporate) pot iniția tranzacții și vizualiza extrase de cont direct prin intermediul aplicațiilor Multicash sau BusinessNet.31 Multicash este o aplicație instalată pe stația de lucru a clientului, compatibilă cu formate standardizate de extrase MT940 și MT942, permițând și semnarea securizată la distanță prin modulul Multicash@Sign.31
+Plățile electronice se procesează prin intermediul caselor de compensare, fiind percepute comisioane standard de transfer 29:
+* Plăți interbancare de mică valoare (sub 50.000 Lei) procesate prin sistemul SENT: 0,51 Lei.29
+* Plăți de mare valoare (peste 50.000 Lei) sau urgente procesate prin sistemul ReGIS: 6 Lei.29
+* Plăți instant de mică valoare efectuate prin facilitatea RoPay: 0,20% din valoare, cu un maxim garantat de 0,10 Lei.29
+* Procesarea instrumentelor de debit (cecuri, bilete la ordin) prin casa de compensare SENT: 0,88 Lei.29
+________________
+Ghid de Utilizare a Canalelor Digitale, Asistență și Securitate Online
+Utilizarea sigură și activarea corectă a aplicațiilor digitale constituie elemente esențiale în prevenirea fraudelor și eficientizarea relației cu clienții.32
+Activarea și Utilizarea Mobile Banking
+Aplicația Mobile Banking funcționează independent de serviciile de internet banking, fiind compatibilă cu sistemele de operare Android (versiunea 6 sau superioară) și iOS (versiunea 12 sau mai nouă).34 Procesul de auto-activare se desfășoară direct de pe telefon, utilizând datele unui card de debit sau de credit activ emis de UniCredit.34
+* Etapele de activare: Clientul descarcă aplicația, selectează opțiunea de activare și introduce primele 6 și ultimele 4 cifre ale cardului, ultimele 4 cifre din CNP, PIN-ul cardului fizic și confirmă numărul de telefon.34
+* Finalizarea activării: Sistemul transmite un SMS cu un link de activare.6 Pe dispozitivele iOS, clientul trebuie să dea click pe link-ul din SMS, în timp ce pe dispozitivele Android, link-ul este preluat și procesat automat de aplicație.6 Ulterior, se definește un cod PIN personal format din minimum 6 cifre și se poate activa autentificarea biometrică.6
+* Reguli de securitate în aplicație: Logarea se face securizat, iar fiecare tranzacție se semnează prin intermediul unui cod token unic.33 Autentificarea tranzacțiilor prin amprentă digitală este permisă strict pentru plăți de maximum 4.000 Lei sau echivalent.33 Aplicația deconectează automat utilizatorul după 3 minute de inactivitate.33
+Sfaturi Practice și Funcționalități în Online Banking
+Platforma Online Banking integrează o serie de instrumente rapide destinate administrării zilnice a fondurilor 36:
+* Personalizarea conturilor: Utilizatorii pot schimba denumirea oficială a conturilor curente, de economii sau a creditelor active prin apăsarea iconiței de editare din dreptul numelui.36
+* Schimbarea limbii: Se poate efectua direct din meniul de Setări sau prin modificarea manuală a prefixului limbii în bara de adrese a browserului (înlocuind "ro" cu "en" sau invers).36
+* Repetarea plăților: O tranzacție deja efectuată poate fi duplicată instant prin selectarea acesteia și apăsarea butonului "REFOLOSESTE PLATA", eliminând necesitatea reintroducerii datelor.36
+* Convertor valutar: Accesibil prin apăsarea iconiței plutitoare verzi din partea dreaptă a ecranului, oferind cotațiile de schimb actualizate în timp real.36
+* Navigare rapidă: Apăsarea logoului oficial UniCredit Bank reîmprospătează pagina curentă, în timp ce iconița formată din cele nouă puncte readuce utilizatorul pe ecranul principal.36
+* Obiective de economisire: Se pot defini și monitoriza obiective specifice direct din meniul de Setări, cu condiția deținerii unui cont de economii activ.36
+Serviciile Asistentului Virtual Ioana
+Asistentul telefonic automatizat "Ioana" oferă asistență rapidă clienților care apelează Info Center, după confirmarea identității prin CNP și ultimele 4 cifre ale cardului.32 Serviciile acoperite includ 32:
+* Blocarea instantanee a cardurilor rătăcite sau furate, precum și a accesului la Online/Mobile Banking 32;
+* Setarea, modificarea sau regenerarea codului PIN pentru cardurile de debit și credit 32;
+* Furnizarea soldului disponibil pentru cardurile de debit și cele de tichete de masă 32;
+* Detalierea limitelor de credit, a sumelor minime datorate și a scadențelor pentru cardurile de credit 32;
+* Verificarea punctelor de loialitate acumulate pe cardurile UCFIN și a modalităților de utilizare a acestora.32
+Date de Contact și Serviciul Popriri
+* Info Center (Asistență generală 24/7): +40 21 200 2020 (apelabil din rețeaua fixă Orange Romania Communications) sau numărul scurt *2020 (din rețelele mobile Orange, RCS&RDS, Telekom, Vodafone).3
+* Serviciul Popriri (Organe de Executare Silită): Documentația fizică se transmite exclusiv la adresa: Bulevardul Expoziției, nr. 1F, Sector 1, București, UniCredit Bank S.A. – Punct de Lucru – În atenția Serviciului Popriri, programul de primire fiind în zilele lucrătoare între 09:00 și 15:30.32 Pentru întrebări tehnice privind protocoalele electronice, se poate utiliza adresa ProtocoalePopriri@unicredit.ro.32
+Ghid de Protecție Împotriva Fraudelor Bancare
+Asigurarea securității financiare impune respectarea cu strictețe a recomandărilor de comportament online sigure.32
+1. Regula fundamentală a cardului: Cardul bancar este exclusiv un instrument de efectuare a plăților, nu de încasare a banilor.32 Pentru a primi sume de la alte persoane, clientul trebuie să furnizeze doar codul IBAN al contului său.32 Divulgarea numărului de card, a datei de expirare și a codului de securitate CVV/CVC sub pretextul primirii unui transfer reprezintă un risc major de fraudă.32
+2. Mesaje și linkuri suspecte: Clienții nu trebuie să răspundă solicitărilor de date cu caracter personal sau acreditări de autentificare sosite prin SMS-uri sau e-mailuri suspecte.32 Aplicațiile bancare nu trebuie instalate la recomandarea unor apeluri telefonice nesolicitate.32
+3. Procedura de urgență în caz de fraudă: În scenariul în care un client a accesat un link suspect și a introdus datele confidențiale ale instrumentelor sale de plată, acesta trebuie să acționeze imediat prin parcurgerea a patru pași esențiali 32:
+   * Pasul 1: Blocarea imediată a cardului direct din Mobile Banking sau prin apel la serviciul TelVerde de urgență 0800 888 111.32
+   * Pasul 2: Schimbarea de urgență a parolelor de acces la aplicațiile de Mobile și Online Banking.32
+   * Pasul 3: Scanarea completă a telefonului sau laptopului prin instalarea unui antivirus pentru a elimina eventualele programe spion.32
+   * Pasul 4: Raportarea evenimentului către Poliția Română (petitii@politiaromana.ro), Directoratul Național de Securitate Cibernetică (DNSC) la numărul scurt 1911 și către bancă la infocenter@unicredit.ro.32
+Works cited
+1. UniCredit Grup Romania, accessed May 16, 2026, https://www.unicredit.ro/content/dam/cee2020-pws-ro/DocumentePDF/Institutional-Rezultate-financiare/RAPORT-ANUAL-31.12.2025-IN-CONFORMITATE-CU-REGULAMENTUL-5_2018.pdf
+2. Raport Anual 2024 conform Regulamentului ASF 5/2018 - UniCredit Bank, accessed May 16, 2026, https://www.unicredit.ro/content/dam/cee2020-pws-ro/DocumentePDF/Institutional-Rezultate-financiare/RAPORT-ANUAL-31-12-2024-IN-CONFORMITATE-CU-REGULAMENTUL-5-2018.pdf
+3. Despre Noi - UniCredit Bank, accessed May 16, 2026, https://www.unicredit.ro/ro/institutional.html
+4. Lista sucursalelor UniCredit Bank care deservesc actionarii minoritari in procesul de vanzare a actiunilor, accessed May 16, 2026, https://www.unicredit.ro/content/dam/cee2020-pws-ro/DocumentePDF/Actionari/Lista-sucursalelor-UniCredit-Bank-actionarii-minoritari.pdf
+5. Conturi bancare - ofertele de cont curent UniCredit Bank, accessed May 16, 2026, https://www.unicredit.ro/ro/persoane-fizice/Tranzactionare/ContCurent.html
+6. Activare Mobile Banking | Persoane Fizice - UniCredit Bank, accessed May 16, 2026, https://www.unicredit.ro/ro/persoane-fizice/digital/activaremobilebanking.html
+7. Cont bancar Optim - oferta de cont curent UniCredit Bank, accessed May 16, 2026, https://www.unicredit.ro/ro/persoane-fizice/Tranzactionare/ContCurent/oferta-optim.html
+8. Cont bancar Star - oferta de cont curent UniCredit Bank, accessed May 16, 2026, https://www.unicredit.ro/ro/persoane-fizice/Tranzactionare/ContCurent/oferta-star.html
+9. Cont bancar Premium - oferta de cont curent UniCredit Bank, accessed May 16, 2026, https://www.unicredit.ro/ro/persoane-fizice/Tranzactionare/ContCurent/oferta-premium.html
+10. Debit cards - UniCredit Bank, accessed May 16, 2026, https://www.unicredit.ro/en/persoane-fizice/banking/debit-cards.html
+11. Virtual Card - UniCredit Bank, accessed May 16, 2026, https://www.unicredit.ro/en/persoane-fizice/digital/virtualcard.html
+12. Cash withdrawal - UniCredit Bank, accessed May 16, 2026, https://www.unicredit.ro/en/persoane-fizice/digital/Cash-withdrawal.html
+13. Retragere numerar - UniCredit Bank, accessed May 16, 2026, https://www.unicredit.ro/ro/persoane-fizice/digital/Retragere-numerar.html
+14. UniCreditCard Principal - UniCredit Bank, accessed May 16, 2026, https://www.unicredit.ro/en/popupeditpages/PI-CardCredit-Details/UniCreditCardPrincipal-Detalii.modal.html
+15. Credit cards - UniCredit Bank, accessed May 16, 2026, https://www.unicredit.ro/en/persoane-fizice/borrowing/credit-cards.html
+16. Cardul de credit UniCredit Consumer Financing, accessed May 16, 2026, https://www.unicredit.ro/ro/persoane-fizice/asistenta/card-de-credit.html
+17. Credite de realizari personale - UniCredit Bank, accessed May 16, 2026, https://www.unicredit.ro/ro/persoane-fizice/Credite/credite-realizari-personale.html
+18. Credite ipotecare - Aplica online | UniCredit Bank, accessed May 16, 2026, https://www.unicredit.ro/ro/persoane-fizice/Credite/credite-ipoteca.html
+19. Personal Accomplishments Loan - UniCredit Bank, accessed May 16, 2026, https://www.unicredit.ro/en/persoane-fizice/borrowing/personal-loans.html
+20. Credite de nevoi personale - UniCredit Bank, accessed May 16, 2026, https://www.unicredit.ro/ro/persoane-fizice/asistenta/credite-de-nevoi-personale.html
+21. Credite cu ipoteca - UniCredit Bank, accessed May 16, 2026, https://www.unicredit.ro/ro/persoane-fizice/asistenta/credite-cu-ipoteca.html
+22. Conturi de economii si depozite la termen - UniCredit Bank, accessed May 16, 2026, https://www.unicredit.ro/ro/persoane-fizice/asistenta/conturi-de-economii-si-depozite-la-termen.html
+23. Depozite la Termen - UniCredit Bank, accessed May 16, 2026, https://www.unicredit.ro/ro/persoane-fizice/Economisire-si-investitii/campanie-depozite-la-termen.html
+24. Conturi de economii - UniCredit Bank, accessed May 16, 2026, https://www.unicredit.ro/ro/persoane-fizice/Economisire-si-investitii/campanie-conturi-de-economii.html
+25. Pachete de cont curent - UniCredit Bank, accessed May 16, 2026, https://www.unicredit.ro/ro/imm/tranzactionare/pachete-cont-curent.html
+26. MICRO - UniCredit Bank, accessed May 16, 2026, https://www.unicredit.ro/ro/imm.html
+27. Pachete de cont curent - UniCredit Bank, accessed May 16, 2026, https://www.unicredit.ro/ro/imm/micro/pachete-de-cont-curent.html
+28. COMISIOANE & DOBÂNZI CLIENȚI PERSOANE JURIDICE CU CIFRA DE AFACERI <1 MILION EURO, LIBER PROFESIONIȘTI & PERSO - UniCredit Bank, accessed May 16, 2026, https://www.unicredit.ro/content/dam/cee2020-pws-ro/DocumentePDF/TarifeComisioaneSME/Comisioane-si-dobanzi-SME.pdf
+29. COMISIOANE & DOBÂNZI CORPORATE - UniCredit Bank, accessed May 16, 2026, https://www.unicredit.ro/content/dam/cee2020-pws-ro/DocumentePDF/TarifeComisioaneCIB/Taxe-si-Comisioane-Corporate.pdf
+30. Debit cards for SMEs - UniCredit Bank, accessed May 16, 2026, https://www.unicredit.ro/en/sme/borrowing/debit-card-imm.html
+31. Cash Management - UniCredit Bank, accessed May 16, 2026, https://www.unicredit.ro/en/financial-institutions/transactional-banking/cash-management.html
+32. Securitate | UniCredit Bank, accessed May 16, 2026, https://www.unicredit.ro/ro/persoane-fizice/Diverse/securitate.html
+33. Siguranta aplicatiei de Mobile Banking - UniCredit Bank, accessed May 16, 2026, https://www.unicredit.ro/ro/persoane-fizice/digital/tutoriale/tutoriale-mobilebanking/siguranta-aplicatiei.html
+34. Mobile Banking - UniCredit Bank, accessed May 16, 2026, https://www.unicredit.ro/ro/persoane-fizice/asistenta/mobile-banking.html
+35. Tutorial Activare Mobile Banking | Persoane Fizice - UniCredit Bank, accessed May 16, 2026, https://www.unicredit.ro/ro/persoane-fizice/digital/tutoriale/tutoriale-mobilebanking/activare-mobilebanking.html
+36. Tutoriale Online Banking - UniCredit Bank, accessed May 16, 2026, https://www.unicredit.ro/ro/persoane-fizice/digital/tutoriale/tutoriale-onlinebanking.html
+37. Cont curent - UniCredit Bank, accessed May 16, 2026, https://www.unicredit.ro/ro/persoane-fizice/asistenta/cont-curent.html
+38. Card de debit - UniCredit Bank, accessed May 16, 2026, https://www.unicredit.ro/ro/persoane-fizice/asistenta/card-de-debit.html

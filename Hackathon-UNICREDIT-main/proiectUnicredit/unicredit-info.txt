@@ -1,0 +1,18 @@
+Document local UniCredit generat ca fallback cand Jsoup nu poate accesa site-ul.
+
+SURSA: https://www.unicredit.ro/ro/persoane-fizice/Credite/credite-realizari-personale.html
+- Creditul de Realizari Personale este oferit de UniCredit Consumer Financing IFN S.A. prin UniCredit Bank S.A.
+- Produsul mentioneaza o dobanda anuala fixa de la 6,49% pana la 20,99%.
+- Produsul mentioneaza finantare pana la 250.000 lei.
+- Produsul mentioneaza rambursare intre 12 si 60 de luni.
+- Conditiile de eligibilitate mentioneaza varsta minima 22 ani si varsta maxima 70 ani, cu exceptii pentru navigatori.
+
+SURSA: https://www.unicredit.ro/ro/persoane-fizice/Credite/credite-realizari-personale/credite-realizari-personale-MB.html
+- Creditul de Realizari Personale 100% Mobile poate fi accesat din Mobile Banking.
+- Produsul 100% Mobile mentioneaza imprumut pana la 200.000 lei.
+- Produsul 100% Mobile mentioneaza perioada flexibila de rambursare intre 12 si 60 de luni.
+
+REGULI INTERNE BEMYHELP:
+- Pentru intentii despre masina, autoturism sau achizitie personala se afiseaza exclusiv Credit de Realizari Personale ca optiune de produs.
+- Pentru intrebari simple de suport sau forum se afiseaza solutia gasita in documentul local.
+- Daca o informatie nu apare in acest document local, raspunsul trebuie sa spuna explicit ca nu are detalii.
